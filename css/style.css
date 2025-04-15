@@ -1,0 +1,26 @@
+.titulo-fondo {
+    background-image: url("../assets/relojes.jpg"); /* Tu imagen de fondo */
+    background-repeat: repeat;
+    padding: 20px;
+    text-shadow: 8px 5px 4px #000000;
+}
+
+.fondo-main {
+    background-image: url(../assets/diamantes.jpg);
+    background-repeat: repeat;
+    text-shadow: 8px 5px 4px #000000;
+}
+
+.fondo-diamantes{
+    background-image: url(../assets/diamantesNegros.png);
+    background-position: center;
+    text-shadow: 8px 5px 4px #000000;
+}
+
+.bg-gold {
+    background-color: #B8860B;
+}
+
+.bg-gold .nav-link {
+    color: white !important;
+}
