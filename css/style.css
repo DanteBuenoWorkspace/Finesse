@@ -1,38 +1,3 @@
-/* Imagen de fondo del HEADER */
-.titulo-fondo {
-    background-image: url("../assets/relojes.jpg"); /* Tu imagen de fondo */
-    background-repeat: repeat;
-    padding: 20px;
-    text-shadow: 8px 5px 4px #000000;
-}
 
-/* Imagen de fondo para las CARDS */
-.fondo-diamantes{
-    background-image: url(../assets/diamantes-negros.png);
-    background-position: center;
-    text-shadow: 8px 5px 4px #000000;
-}
 
-.fondo-relojes-negros{
-    background-image: url(../assets/relojes-negros.png);
-    background-position: center;
-    text-shadow: 8px 5px 4px #000000;
-}
-
-.fondo-relojes-dorados{
-    background-image: url(../assets/relojes-dorados.png);
-}
-
-/* Personalizado */
-.bg-gold {
-    background-color: #B8860B;
-}
-
-.bg-gold .nav-link {
-    color: white !important;
-}
-
-/* Estilo del logo */
-.logo-img {
-    width: 200px;
-}
+/*# sourceMappingURL=style.css.map */
