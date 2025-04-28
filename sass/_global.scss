@@ -1,0 +1,30 @@
+/* Imagen de fondo para las CARDS */
+.fondo-diamantes{
+    background-image: url(../assets/diamantes-negros.png);
+    background-position: center;
+    text-shadow: 8px 5px 4px #000000;
+}
+
+.fondo-relojes-negros{
+    background-image: url(../assets/relojes-negros.png);
+    background-position: center;
+    text-shadow: 8px 5px 4px #000000;
+}
+
+.fondo-relojes-dorados{
+    background-image: url(../assets/relojes-dorados.png);
+}
+
+/* Estilos globales */
+
+h1{
+    color: $color-h1;
+}
+
+h2.card-title {
+    color: $color-h1;
+}
+
+p{
+    color: $color-p;
+}

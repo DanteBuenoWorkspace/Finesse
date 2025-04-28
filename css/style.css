@@ -1,5 +1,51 @@
-body {
-  background-color: #3498db;
+/* Imagen de fondo del HEADER */
+.titulo-fondo {
+  background-image: url("../assets/relojes.jpg"); /* Tu imagen de fondo */
+  background-repeat: repeat;
+  padding: 20px;
+  text-shadow: 8px 5px 4px #000000;
+}
+
+/* Estilo del logo */
+.logo-img {
+  width: 200px;
+}
+
+nav {
+  background-color: #B8860B;
+}
+nav .nav-link {
+  color: white !important;
+}
+
+/* Imagen de fondo para las CARDS */
+.fondo-diamantes {
+  background-image: url(../assets/diamantes-negros.png);
+  background-position: center;
+  text-shadow: 8px 5px 4px #000000;
+}
+
+.fondo-relojes-negros {
+  background-image: url(../assets/relojes-negros.png);
+  background-position: center;
+  text-shadow: 8px 5px 4px #000000;
+}
+
+.fondo-relojes-dorados {
+  background-image: url(../assets/relojes-dorados.png);
+}
+
+/* Estilos globales */
+h1 {
+  color: #dc3545;
+}
+
+h2.card-title {
+  color: #dc3545;
+}
+
+p {
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */

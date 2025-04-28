@@ -1,5 +1,4 @@
-$primary-color: #3498db;
-
-body{   
-    background-color: $primary-color;
-}
+@import "variables";
+@import "header";
+@import "navbar";
+@import "global.scss";

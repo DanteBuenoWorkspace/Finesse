@@ -1,0 +1,10 @@
+@import "variables";
+
+nav{
+    background-color: $color-fondo-dorado;
+
+    .nav-link {
+        color: white !important;
+    }
+}
+
