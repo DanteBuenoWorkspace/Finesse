@@ -15,18 +15,18 @@ nav {
   background-color: #B8860B;
 }
 nav .nav-link {
-  color: white !important;
+  color: white;
 }
 
 /* Imagen de fondo para las CARDS */
 .fondo-diamantes {
-  background-image: url(../assets/diamantes-negros.png);
+  background-image: url("../assets/diamantes-negros.png");
   background-position: center;
   text-shadow: 8px 5px 4px #000000;
 }
 
 .fondo-relojes-negros {
-  background-image: url(../assets/relojes-negros.png);
+  background-image: url("../assets/relojes-negros.png");
   background-position: center;
   text-shadow: 8px 5px 4px #000000;
 }
@@ -36,16 +36,17 @@ nav .nav-link {
 }
 
 /* Estilos globales */
-h1 {
-  color: #dc3545;
-}
-
-h2.card-title {
+h1, h2, h3 {
   color: #dc3545;
 }
 
 p {
   color: #ffffff;
+}
+
+/*bordes*/
+.borde-primario {
+  border: 1px solid #dc3545;
 }
 
 /*# sourceMappingURL=style.css.map */

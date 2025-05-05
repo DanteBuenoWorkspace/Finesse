@@ -1,4 +1,4 @@
-@import "variables";
-@import "header";
-@import "navbar";
-@import "global.scss";
+@use "variables" as v;
+@use "header" as h;
+@use "navbar" as n;
+@use "global.scss" as g;
