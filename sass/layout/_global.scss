@@ -1,0 +1,48 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as mx;
+
+body{
+    background-color: v.$background-color-dark;
+}
+
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Imagen de fondo para las CARDS */
+
+.fondo-diamantes{
+    @include mx.fondo-imagen("../assets/diamantes-negros.png");
+}
+
+.fondo-relojes-negros{
+    @include mx.fondo-imagen("../assets/relojes-negros.png");
+}
+
+.fondo-relojes-dorados{
+    @include mx.fondo-imagen("../assets/relojes-dorados.png");
+    background-position: 0% 0%;
+}
+
+/* Estilos globales */
+
+h1, h2,  h3{
+    color: v.$text-rojo;
+}
+
+p{
+    color: v.$color-p;
+}
+
+/*bordes*/
+
+.borde-primario {
+    border: 1px solid v.$color-borde;
+  }

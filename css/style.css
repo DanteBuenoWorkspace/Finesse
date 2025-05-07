@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
 /* Imagen de fondo del HEADER */
 .titulo-fondo {
   background-image: url("../assets/relojes.jpg"); /* Tu imagen de fondo */
@@ -17,6 +18,22 @@ nav {
 nav .nav-link {
   color: white;
 }
+nav .nav-link:hover {
+  color: #dc3545;
+}
+
+body {
+  background-color: #000000;
+}
+
+/* Fuentes */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Playfair Display", serif;
+}
 
 /* Imagen de fondo para las CARDS */
 .fondo-diamantes {
@@ -32,7 +49,10 @@ nav .nav-link {
 }
 
 .fondo-relojes-dorados {
-  background-image: url(../assets/relojes-dorados.png);
+  background-image: url("../assets/relojes-dorados.png");
+  background-position: center;
+  text-shadow: 8px 5px 4px #000000;
+  background-position: 0% 0%;
 }
 
 /* Estilos globales */
