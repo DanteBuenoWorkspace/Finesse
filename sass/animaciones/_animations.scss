@@ -1,0 +1,13 @@
+@use "../base/variables" as v;
+
+.navbar-nav .nav-item .nav-link {
+    display: inline-block;
+    transition: transform 0.3s ease, color 0,3s ease;
+  
+    &:hover {
+      transform: scale(1.05);  // Hace que crezca de 1 a 1.05
+      color: v.$text-rojo;
+
+    }
+}
+  

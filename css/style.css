@@ -18,9 +18,6 @@ nav {
 nav .nav-link {
   color: white;
 }
-nav .nav-link:hover {
-  color: #dc3545;
-}
 
 body {
   background-color: #000000;
@@ -67,6 +64,15 @@ p {
 /*bordes*/
 .borde-primario {
   border: 1px solid #dc3545;
+}
+
+.navbar-nav .nav-item .nav-link {
+  display: inline-block;
+  transition: transform 0.3s ease, color 0, 3s ease;
+}
+.navbar-nav .nav-item .nav-link:hover {
+  transform: scale(1.05);
+  color: #dc3545;
 }
 
 /*# sourceMappingURL=style.css.map */
