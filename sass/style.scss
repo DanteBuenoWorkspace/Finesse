@@ -3,3 +3,5 @@
 @use "components/navbar" as n;
 @use "layout/global" as g;
 @use "animaciones/animations" as a;
+@use "animaciones/transforms" as t;
+@use "base/mixins" as m;

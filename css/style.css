@@ -19,6 +19,37 @@ nav .nav-link {
   color: white;
 }
 
+/*
+@mixin fade-in($direction: up, $distance: 30px) {
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+
+      // Direcciones
+      @if $direction == up {
+        transform: translateY($distance);
+      }
+
+      @else if $direction == down {
+        transform: translateY(-$distance);
+      }
+
+      @else if $direction == left {
+        transform: translateX(-$distance);
+      }
+
+      @else if $direction == right {
+        transform: translateX($distance);
+      }
+    }
+
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
+*/
 body {
   background-color: #000000;
 }
@@ -66,13 +97,50 @@ p {
   border: 1px solid #dc3545;
 }
 
+@keyframes fade-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.fade-in-left {
+  opacity: 0;
+  animation: fade-in-left 0.8s ease-in-out forwards;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.fade-in-up {
+  opacity: 1;
+  animation: fade-in-up 0.8s ease-in-out;
+}
+
 .navbar-nav .nav-item .nav-link {
   display: inline-block;
-  transition: transform 0.3s ease, color 0, 3s ease;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 .navbar-nav .nav-item .nav-link:hover {
   transform: scale(1.05);
   color: #dc3545;
+}
+
+.card-hover-effect {
+  transition: transform 0.3s ease;
+}
+.card-hover-effect:hover {
+  transform: scale(1.02) translateY(-2px);
 }
 
 /*# sourceMappingURL=style.css.map */
