@@ -24,10 +24,10 @@
             <div class="row align-items-center">
                 <div class="col-md-3 text-center">
                     <img src="../assets/finesse.jpeg" alt="logo"
-                        class="img-fluid borde-primario rounded logo-img" />
+                        class="img-fluid borde-primario rounded logo-img fade-in-left" />
                 </div>
                 <div class="col-md-9 text-center">
-                    <h1 class="text-uppercase fw-bold">Finesse</h1>
+                    <h1 class="text-uppercase fw-bold fade-in-right">Finesse</h1>
                 </div>
             </div>
         </header>
@@ -62,7 +62,8 @@
             <div class="row p-3 g-3 ">
                 <div class="col-12 col-md-7 col-lg-7">
                     <!-- Card 1 -->
-                    <section class="card borde-primario text-center rounded p-4 fondo-diamantes">
+                    <section
+                        class="card borde-primario text-center rounded p-4 fondo-diamantes fade-in-up card-hover-effect">
                         <h2 class="mb-3">
                             Contáctanos
                         </h2>
@@ -73,7 +74,8 @@
                 </div>
                 <div class="col-12 col-md-5 col-lg-5">
                     <!-- Card 2 -->
-                    <section class="card borde-primario text-center rounded p-4 fondo-diamantes">
+                    <section
+                        class="card borde-primario text-center rounded p-4 fondo-diamantes fade-in-up card-hover-effect">
                         <h2 class="mb-3">
                             ¡Esperamos tu mensaje!
                         </h2>
@@ -87,28 +89,25 @@
 
             <!--formulario-->
             <form>
-                <div class="row px-3">
-                    <div class="col-md-6 col-12 mb-3">
-                        <div class="form-floating text-dark">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                            <label for="floatingInput">Correo electrónico</label>
-                        </div>
+                <form class="p-4 border rounded bg-light">
+                    <div class="mb-3 card-hover-effect fade-in-left rounded">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
                     </div>
-                    <div class="col-md-6 col-12 mb-3">
-                        <div class="form-floating text-dark">
-                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                            <label for="floatingPassword">Contraseña</label>
-                        </div>
+
+                    <div class="mb-3 card-hover-effect fade-in-left rounded">
+                        <label for="consulta" class="form-label">Tu consulta</label>
+                        <textarea class="form-control" id="consulta" rows="4" placeholder="Escribí tu mensaje aquí..."
+                            required></textarea>
                     </div>
-                    <div class="col-12 text-center">
-                        <button type="submit" class="btn btn-danger mt-2">Enviar</button>
-                    </div>
-                </div>
+
+                    <button type="submit" class="btn btn-outline-warning fade-in-left">Enviar</button>
+                </form>
             </form>
         </main>
 
         <!-- FOOTER -->
-        <footer class="bg-dark p-4 mt-5 borde-primario rounded">
+        <footer class="bg-dark p-4 m-3 borde-primario rounded card-hover-effect">
             <div class="row">
                 <div class="col-md-6">
                     <h2>Sobre nosotros</h2>

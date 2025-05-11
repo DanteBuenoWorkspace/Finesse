@@ -3,34 +3,3 @@
     background-position: center;
     text-shadow: 8px 5px 4px #000000;
 }
-/*
-@mixin fade-in($direction: up, $distance: 30px) {
-  @keyframes fade-in {
-    from {
-      opacity: 0;
-      
-      // Direcciones
-      @if $direction == up {
-        transform: translateY($distance);
-      }
-
-      @else if $direction == down {
-        transform: translateY(-$distance);
-      }
-
-      @else if $direction == left {
-        transform: translateX(-$distance);
-      }
-
-      @else if $direction == right {
-        transform: translateX($distance);
-      }
-    }
-
-    to {
-      opacity: 1;
-      transform: none;
-    }
-  }
-}
-*/
