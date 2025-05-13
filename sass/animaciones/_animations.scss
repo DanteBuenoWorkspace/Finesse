@@ -1,6 +1,9 @@
 @use "../base/variables" as v;
 @use "../base/mixins" as m;
 
+/* animaciones de aparicion (fade-in) desde diferentes direcciones*/
+
+/*desde la izquierda*/
 @keyframes fade-in-left{
   from{
     opacity: 0;
@@ -13,10 +16,11 @@
 }
 
 .fade-in-left {
-  opacity: 1;
-  animation: fade-in-left 1s ease-in-out;
+  opacity: 0;
+  animation: fade-in-left 1s ease-in-out forwards;
 }
 
+/*desde la derecha*/
 @keyframes fade-in-right{
   from{
     opacity: 0;
@@ -29,26 +33,28 @@
 }
 
 .fade-in-right {
-  opacity: 1;
-  animation: fade-in-right 1s ease-in-out;
+  opacity: 0;
+  animation: fade-in-right 1s ease-in-out forwards;
 }
 
-@keyframes fade-in-up{
-  from{
+/*desde abajo*/
+@keyframes fade-in-up {
+  from {
     opacity: 0;
     transform: translateY(30px);
   }
-  to{
+  to {
     opacity: 1;
     transform: none;
   }
 }
 
 .fade-in-up {
-  opacity: 1;
-  animation: fade-in-up 1s ease-in-out;
+  opacity: 0;
+  animation: fade-in-up 1s ease-out forwards;
 }
 
+/* desde arriba */
 @keyframes fade-in-down{
   from{
     opacity: 0;
@@ -61,6 +67,15 @@
 }
 
 .fade-in-down {
-  opacity: 1;
-  animation: fade-in-down 1s ease-in-out;
+  opacity: 0;
+  animation: fade-in-down 1s ease-in-out forwards;
 }
+
+/*generador de clases de delay para animaciones*/
+
+@for $i from 1 through 10 {
+  .anim-delay-#{$i} {
+    @include m.delay($i);
+  }
+}
+

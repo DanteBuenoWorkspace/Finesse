@@ -1,9 +1,11 @@
 @use "../base/variables" as v;
 
+/* estilos de enlaces en la barra de navegación */
 .navbar-nav .nav-item .nav-link {
     display: inline-block;
     transition: transform 0.3s ease, color 0.3s ease;
 
+    /* efecto hover: escala y cambio de color*/
     &:hover {
         transform: scale(1.05);
         color: v.$text-rojo;
@@ -14,6 +16,7 @@
 .card-hover-effect {
     transition: transform 0.3s ease;
 
+    /* efecto hover: escala y movimiento hacia arriba */
     &:hover {
         transform: scale(1.02) translateY(-2px);
     }

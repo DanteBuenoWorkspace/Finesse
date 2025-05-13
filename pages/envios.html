@@ -20,15 +20,13 @@
     <div class="container-fluid">
 
         <!-- HEADER -->
-        <header class="titulo-fondo p-3 mb-4 rounded">
-            <div class="row align-items-center">
-                <div class="col-md-3 text-center">
-                    <img src="../assets/finesse.jpeg" alt="logo"
-                        class="img-fluid borde-primario rounded logo-img fade-in-left" />
-                </div>
-                <div class="col-md-9 text-center">
-                    <h1 class="text-uppercase fw-bold fade-in-right">Finesse</h1>
-                </div>
+        <header class="titulo-fondo p-3 mb-4 rounded header-flex">
+            <div class="logo-contenedor">
+                <img src="../assets/finesse.jpeg" alt="logo"
+                    class="img-fluid borde-primario rounded logo-img fade-in-left" />
+            </div>
+            <div class="titulo-contenedor">
+                <h1 class="text-uppercase fw-bold fade-in-right">Finesse</h1>
             </div>
         </header>
 
@@ -61,59 +59,63 @@
         <main class="text-center">
 
             <!-- Card 1 -->
-            <section
-                class="card borde-primario rounded p-4 m-4 fondo-diamantes text-center card-hover-effect fade-in-down">
-                <h2 class="mb-3">Envíos</h2>
-                <p class="fw-semibold mb-4">Conocé nuestras políticas de envío y devoluciones</p>
+            <div class="fade-in-down anim-delay-1">
+                <section class="card borde-primario rounded p-4 m-4 fondo-diamantes text-center card-hover-effect">
+                    <h2 class="mb-3">Envíos</h2>
+                    <p class="fw-semibold mb-4">Conocé nuestras políticas de envío y devoluciones</p>
 
-                <div class="row g-3 justify-content-center">
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <img src="../assets/envio-a-domicilio.jpg" alt="Envío a domicilio"
-                            class="img-fluid rounded borde-primario">
+                    <div class="row g-3 justify-content-center">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <img src="../assets/envio-a-domicilio.jpg" alt="Envío a domicilio" class="img-fluid rounded borde-primario">
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <img src="../assets/mapa.jpg" alt="Envío global" class="img-fluid rounded borde-primario">
+                        </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <img src="../assets/mapa.jpg" alt="Envío global" class="img-fluid rounded borde-primario">
-                    </div>
-                </div>
 
-            </section>
+                </section>
+            </div>
+
             <div class="row g-3 m-3 ">
                 <div class="col-12 col-md-6 col-lg-6">
                     <!-- Card 2 -->
-                    <section
-                        class="card borde-primario p-4 me-2 fondo-relojes-negros card-hover-effect fade-in-left">
-                        <h3>📦 Envíos Seguros y Rápidos</h3>
-                        <p class="card-text fw-semibold mb-3">En Finesse, nos aseguramos de que tu reloj llegue en
-                            perfectas condiciones y en el menor tiempo posible.<br>
-                            ✅ Envíos a todo el país con las mejores paqueterías.<br>
-                            ✅ Tiempo de entrega estimado: 2 a 7 días hábiles según tu ubicación.<br>
-                            ✅ Seguimiento en tiempo real para que siempre sepas dónde está tu pedido.<br>
-                            ✅ Embalaje seguro, garantizando que tu reloj llegue intacto.<br>
-                        </p>
-                    </section>
+                    <div class="fade-in-left anim-delay-2">
+                        <section class="card borde-primario p-4 me-2 fondo-relojes-negros card-hover-effect">
+                            <h3>📦 Envíos Seguros y Rápidos</h3>
+                            <p class="card-text fw-semibold mb-3">En Finesse, nos aseguramos de que tu reloj llegue en
+                                perfectas condiciones y en el menor tiempo posible.<br>
+                                ✅ Envíos a todo el país con las mejores paqueterías.<br>
+                                ✅ Tiempo de entrega estimado: 2 a 7 días hábiles según tu ubicación.<br>
+                                ✅ Seguimiento en tiempo real para que siempre sepas dónde está tu pedido.<br>
+                                ✅ Embalaje seguro, garantizando que tu reloj llegue intacto.<br>
+                            </p>
+                        </section>
+                    </div>
                 </div>
                 <div class=" col-12 col-md-6 col-lg-6">
                     <!-- Card 3 -->
-                    <section class="card borde-primario p-4 ms-2 fondo-relojes-negros card-hover-effect fade-in-right ">
-                        <h3>🔍 Garantía y Devoluciones</h3>
-                        <p class="card-text fw-semibold mb-3">
-                            Tu satisfacción es nuestra prioridad. Si hay algún inconveniente, ofrecemos garantía en
-                            todos nuestros productos y la posibilidad de cambios o devoluciones dentro de un plazo
-                            determinado.<br>
-                            ✔️ Garantía de 12 meses en defectos de fabricación.<br>
-                            ✔️ Devoluciones sin costo si el producto no es el esperado.<br>
-                            ✔️ Atención personalizada para resolver cualquier duda o inconveniente.<br>
-                        </p>
-                    </section>
+                    <div class="fade-in-right anim-delay-3">
+                        <section class="card borde-primario p-4 ms-2 fondo-relojes-negros card-hover-effect ">
+                            <h3>🔍 Garantía y Devoluciones</h3>
+                            <p class="card-text fw-semibold mb-3">
+                                Tu satisfacción es nuestra prioridad. Si hay algún inconveniente, ofrecemos garantía en
+                                todos nuestros productos y la posibilidad de cambios o devoluciones dentro de un plazo
+                                determinado.<br>
+                                ✔️ Garantía de 12 meses en defectos de fabricación.<br>
+                                ✔️ Devoluciones sin costo si el producto no es el esperado.<br>
+                                ✔️ Atención personalizada para resolver cualquier duda o inconveniente.<br>
+                            </p>
+                        </section>
+                    </div>
                 </div>
-                <div class="container text-center">
-                    <a href="./contacto.html" class="btn btn-outline-warning my-4 fade-in-up">¿Dudas? Contactanos</a>
+                <div class="text-center">
+                    <a href="./contacto.html" class="btn btn-outline-warning my-4 fade-in-up anim-delay-4">¿Dudas? Contactanos</a>
                 </div>
             </div>
         </main>
 
         <!-- FOOTER -->
-        <footer class="bg-dark p-4 m-3 borde-primario rounded card-hover-effect">
+        <footer class="bg-dark p-4 m-3 borde-primario rounded card-hover-effect fondo-relojes-dorados">
             <div class="row">
                 <div class="col-md-6">
                     <h2>Sobre nosotros</h2>

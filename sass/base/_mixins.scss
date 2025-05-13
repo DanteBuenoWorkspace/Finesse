@@ -1,5 +1,12 @@
+/* fondo con imagen centrada y sombra de texto */
 @mixin fondo-imagen($image){
     background-image: url($image);
     background-position: center;
     text-shadow: 8px 5px 4px #000000;
+}
+
+
+/* delay de animacion */
+@mixin delay($turno){
+    animation-delay: $turno * 0.3s;
 }

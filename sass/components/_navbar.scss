@@ -1,9 +1,10 @@
 @use "../base/variables" as v;
 
+/* estilos para la barra de navegacion */
 nav{
     background-color: v.$color-fondo-dorado;
 
     .nav-link {
-        color: white;
+        color: white; /* Color de texto blanco para los enlaces */
     }
 }

@@ -1,14 +1,11 @@
 @use "../base/variables" as v;
 @use "../base/mixins" as mx;
 
-body{
-    background-color: v.$background-color-dark;
-}
-
-/* Fuentes */
+/* tipografias */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 
 body {
+  background-color: v.$background-color-dark;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -16,7 +13,7 @@ h1, h2, h3, h4 {
   font-family: 'Playfair Display', serif;
 }
 
-/* Imagen de fondo para las CARDS */
+/* fondos personalizados */
 
 .fondo-diamantes{
     @include mx.fondo-imagen("../assets/diamantes-negros.png");
@@ -31,7 +28,7 @@ h1, h2, h3, h4 {
     background-position: 0% 0%;
 }
 
-/* Estilos globales */
+/*  colores de textos */
 
 h1, h2,  h3{
     color: v.$text-rojo;
@@ -45,8 +42,19 @@ p{
     color: v.$text-rojo;
 }
 
-/*bordes*/
+/* Bordes y efectos */
 
 .borde-primario {
     border: 1px solid v.$color-borde;
-  }
+    border-radius: 0.5rem;
+}
+
+.list-group-item {
+  margin-bottom: 6px;
+  background-color: transparent;
+  text-shadow: 0 0 4px rgba(255, 0, 0, 0.5);
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra gris suave */
+}

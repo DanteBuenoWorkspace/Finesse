@@ -1,6 +1,6 @@
 /* Imagen de fondo del HEADER */
 .titulo-fondo {
-    background-image: url("../assets/relojes.jpg"); /* Tu imagen de fondo */
+    background-image: url("../assets/relojes.jpg");
     background-repeat: repeat;
     padding: 20px;
     text-shadow: 8px 5px 4px #000000;
@@ -9,4 +9,32 @@
 /* Estilo del logo */
 .logo-img {
     width: 200px;
+}
+
+/* flexbox para el HEADER */
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo-contenedor {
+    flex: 0 0 25%;
+    text-align: center;
+  }
+
+  .titulo-contenedor {
+    flex: 0 0 75%;
+    text-align: center;
+  }
+
+  /*media queries*/
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+
+    .logo-contenedor,
+    .titulo-contenedor {
+      flex: 100%;
+    }
+  }
 }
