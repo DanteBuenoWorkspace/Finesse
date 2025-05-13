@@ -1,6 +1,6 @@
 # FINESSE
 
-Este proyecto es una página web desarrollada como parte de una entrega práctica. Contiene varias secciones como contacto, relojes, redes sociales y envíos, estilizadas con Sass y Bootstrap.
+Este proyecto es una página web desarrollada como parte de una entrega práctica. Contiene varias secciones como contacto, relojes, redes sociales y envíos, todas estilizadas con Sass y Bootstrap.
 
 ## 🧠 Tecnologías utilizadas
 
@@ -17,5 +17,8 @@ Podés ver el repositorio completo y su historial de versiones en GitHub:
 
 ## 📌 Historial de versiones
 
-El proyecto fue versionado utilizando Git. Podés ver los commits en la pestaña **"Commits"** del repositorio.  
-También fue trabajado en una rama `feature/sass/setup` y luego fusionado a `main`.
+El proyecto fue versionado utilizando Git. Podés ver los commits en la pestaña **"Commits"** del repositorio o aquí:  
+[Historial de commits](https://github.com/DanteBuenoWorkspace/Finesse/commits/main).  
+
+El trabajo se realizó inicialmente en la rama `feature/sass/setup`, que luego fue fusionada con la rama `main`.
+
