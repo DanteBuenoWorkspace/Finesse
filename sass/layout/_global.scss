@@ -16,7 +16,7 @@ h1, h2, h3, h4 {
 /* fondos personalizados */
 
 .fondo-diamantes{
-    @include mx.fondo-imagen("../assets/diamantes-negros.png");
+    @include mx.fondo-imagen("../assets/diamantes-negros");
 }
 
 .fondo-relojes-negros{
