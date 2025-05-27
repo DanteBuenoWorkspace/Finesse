@@ -1,6 +1,6 @@
 # FINESSE
 
-Este proyecto es una página web desarrollada como parte de una entrega práctica. Contiene varias secciones como contacto, relojes, redes sociales y envíos, todas estilizadas con Sass y Bootstrap.
+Este proyecto es una página web desarrollada como entrega práctica, enfocada en mostrar relojes con secciones de contacto, redes sociales y envíos. Utiliza Sass para la organización modular de estilos y Bootstrap para la estructura responsive.
 
 ## 🧠 Tecnologías utilizadas
 
@@ -9,6 +9,28 @@ Este proyecto es una página web desarrollada como parte de una entrega práctic
 - CSS3  
 - Bootstrap 5  
 - Git & GitHub  
+
+## Organización del código Sass
+
+- base: variables, mixins y estilos generales
+
+- components: estilos de componentes reutilizables como header y navbar
+
+- layout: estilos de estructura global y grids responsivos
+
+- animaciones: animaciones CSS con clases y generador de delay para efectos visuales
+
+- style.scss: archivo principal que importa y une todos los módulos
+
+## Funcionalidades destacadas
+
+- Diseño responsive con grids CSS y media queries
+
+- Animaciones de aparición (fade-in desde distintas direcciones)
+
+- Efectos hover con transformaciones suaves en links y tarjetas
+
+- Uso de fuentes personalizadas y fondos con imágenes optimizadas (WebP + PNG)
 
 ## 🔗 Acceso al proyecto
 
@@ -19,6 +41,4 @@ Podés ver el repositorio completo y su historial de versiones en GitHub:
 
 El proyecto fue versionado utilizando Git. Podés ver los commits en la pestaña **"Commits"** del repositorio o aquí:  
 [Historial de commits](https://github.com/DanteBuenoWorkspace/Finesse/commits/main).  
-
-El trabajo se realizó inicialmente en la rama `feature/sass/setup`, que luego fue fusionada con la rama `main`.
 
