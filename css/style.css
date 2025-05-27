@@ -69,7 +69,7 @@ h4 {
 
 /* fondos personalizados */
 .fondo-diamantes {
-  background-image: image-set(url("/assets/diamantes-negros.webp") type("image/webp"), url("/assets/diamantes-negros.png") type("image/png"));
+  background-image: image-set(url("../assets/diamantes-negros.webp") type("image/webp"), url("../assets/diamantes-negros.png") type("image/png"));
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -77,7 +77,7 @@ h4 {
 }
 
 .fondo-relojes-negros {
-  background-image: image-set(url("/assets/relojes-negros.webp") type("image/webp"), url("/assets/relojes-negros.png") type("image/png"));
+  background-image: image-set(url("../assets/relojes-negros.webp") type("image/webp"), url("../assets/relojes-negros.png") type("image/png"));
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -85,7 +85,7 @@ h4 {
 }
 
 .fondo-relojes-dorados {
-  background-image: image-set(url("/assets/relojes-dorados.webp") type("image/webp"), url("/assets/relojes-dorados.png") type("image/png"));
+  background-image: image-set(url("../assets/relojes-dorados.webp") type("image/webp"), url("../assets/relojes-dorados.png") type("image/png"));
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
