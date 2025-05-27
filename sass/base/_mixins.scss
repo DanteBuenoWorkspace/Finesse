@@ -1,15 +1,11 @@
 /* fondo con imagen centrada y sombra de texto */
 @mixin fondo-imagen($image-name) {
-  background-image: image-set(
-    url("../assets/#{$image-name}.webp") type("image/webp"),
-    url("../assets/#{$image-name}.png") type("image/png")
-  );
+  background-image: url("../assets/#{$image-name}.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   text-shadow: 8px 5px 4px #000000;
 }
-
 
 /* delay de animacion */
 @mixin delay($turno){
