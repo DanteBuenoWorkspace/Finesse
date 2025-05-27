@@ -1,10 +1,20 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-AR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Relojes</title>
+
+    <meta name="description"
+        content="Catálogo de relojes Finesse: elegancia, tecnología y estilo. Mirá nuestros modelos y contactanos.">
+    <meta name="keywords"
+        content="relojes, relojes inteligentes, relojes elegantes, Finesse, tienda de relojes, reloj hombre, reloj mujer">
+    <meta name="author" content="Dante Bueno">
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon" />
+
+    <title>Relojes Inteligentes y Elegantes | Finesse - Tienda Exclusiva</title>
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -20,21 +30,23 @@
     <div class="container-fluid">
 
         <!-- HEADER -->
-        <header class="titulo-fondo p-3 mb-4 rounded header-flex">
-            <div class="logo-contenedor">
-                <picture role="img">
-                    <source srcset="../assets/finesse.webp" type="image/webp">
-                    <img src="../assets/finesse.jpeg" alt="Logo de Finesse, relojes exclusivos"
-                        class="img-fluid borde-primario rounded logo-img fade-in-left">
-                </picture>
+        <header class="titulo-fondo p-3 mb-4 rounded header-flex" role="banner">
+            <div class="logo-contenedor card-hover-effect">
+                <a href="../index.html">
+                    <picture>
+                        <source srcset="../assets/finesse.webp" type="image/webp">
+                        <img src="../assets/finesse.jpeg" alt="Logo de Finesse, relojes exclusivos"
+                            class="img-fluid borde-primario rounded logo-img fade-in-left" loading="lazy">
+                    </picture>
+                </a>
             </div>
             <div class="titulo-contenedor">
-                <h1 class="text-uppercase fw-bold fade-in-right">Finesse</h1>
+                <p class="text-uppercase fw-bold fade-in-right titulo-modificado">Finesse</p>
             </div>
         </header>
 
         <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-md mb-4 rounded shadow">
+        <nav class="navbar navbar-expand-md mb-4 rounded shadow" role="navigation">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
@@ -59,11 +71,11 @@
         </nav>
 
         <!--seccion de relojes-->
-        <main class="text-center">
+        <main class="text-center" role="main" id="main">
 
             <!-- Card 1 y Carrusel -->
             <section class="card borde-primario mb-4 shadow fondo-relojes-dorados p-4 fade-in-down anim-delay-1">
-                <h2 class="mb-4">Catálogo de Relojes</h2>
+                <h1 class="mb-4">Catálogo de Relojes</h1>
                 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
@@ -73,20 +85,28 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="d-flex justify-content-center">
-                                <img src="../assets/reloj-inteligente.jpg" class="img-fluid d-block w-100 rounded" style="width: 75%; max-width: 600px;" alt="reloj-Inteligente">
+                                <picture role="img" aria-label="Reloj Inteligente">
+                                    <source srcset="../assets/reloj-7.webp" type="image/webp" />
+                                    <img src="../assets/reloj-7.png" class="borde-primario img-fluid rounded"
+                                        style="max-width: 400px;" alt="Reloj Inteligente" loading="lazy" />
+                                </picture>
                             </div>
                             <div class="carousel-caption d-none d-md-block text-danger">
-                                <h5>Reloj Inteligente</h5>
-                                <p>Alta gama <br> Precio: &dollar;200</p>
+                                <h3 class="mt-2">Patek Philippe Nautilus</h3>
+                                <p class="precio">$12,500</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div class="d-flex justify-content-center">
-                                <img src="../assets/reloj-elegante.jpg" class="img-fluid rounded" style="width: 75%; max-width: 600px;" alt="reloj-Elegante">
+                                <picture role="img" aria-label="Reloj Elegante">
+                                    <source srcset="../assets/reloj-8.webp" type="image/webp" />
+                                    <img src="../assets/reloj-8.png" class="borde-primario img-fluid rounded" style="max-width: 400px;"
+                                        alt="Reloj Elegante" loading="lazy" />
+                                </picture>
                             </div>
                             <div class="carousel-caption d-none d-md-block text-danger">
-                                <h5>Reloj Elegante</h5>
-                                <p>Alta gama <br> Precio: &dollar;200</p>
+                                <h3 class="mt-2">Cartier Santos</h3>
+                                <p class="precio">$8,300</p>
                             </div>
                         </div>
                     </div>
@@ -102,13 +122,84 @@
                     </button>
                 </div>
             </section>
+
+            <h2 class="mb-4 fw-bold text-center fade-in-down anim-delay-1">Catálogo de Relojes Exclusivos</h2>
+
+            <div
+                class="grid-container card borde-primario mb-4 shadow p-4 fade-in-down anim-delay-1 fondo-relojes-negros">
+
+                <article class="grid-item card-hover-effect">
+                    <picture>
+                        <source srcset="../assets/reloj-1.webp" type="image/webp">
+                        <img src="../assets/reloj-1.png" alt="Reloj rolex, exclusivo"
+                            class="img-fluid borde-primario rounded" loading="lazy">
+                    </picture>
+                    <h3 class="mt-2">Rolex Submariner</h3>
+                    <p class="precio">$9,500</p>
+                </article>
+
+                <article class="grid-item card-hover-effect">
+                    <picture>
+                        <source srcset="../assets/reloj-2.webp" type="image/webp">
+                        <img src="../assets/reloj-2.png" alt="Reloj omega, exclusivo"
+                            class="img-fluid borde-primario rounded" loading="lazy">
+                    </picture>
+                    <h3 class="mt-2">Omega Seamaster</h3>
+                    <p class="precio">$7,200</p>
+                </article>
+
+                <article class="grid-item card-hover-effect">
+                    <picture>
+                        <source srcset="../assets/reloj-3.webp" type="image/webp">
+                        <img src="../assets/reloj-3.png" alt="Reloj tag heuer, exclusivo"
+                            class="img-fluid borde-primario rounded" loading="lazy">
+                    </picture>
+                    <h3 class="mt-2">Tag Heuer Carrera</h3>
+                    <p class="precio">$5,400</p>
+                </article>
+
+                <article class="grid-item card-hover-effect">
+                    <picture>
+                        <source srcset="../assets/reloj-4.webp" type="image/webp">
+                        <img src="../assets/reloj-4.png" alt="Reloj breitling, exclusivo"
+                            class="img-fluid borde-primario rounded" loading="lazy">
+                    </picture>
+                    <h3 class="mt-2">Breitling Navitimer</h3>
+                    <p class="precio">$6,800</p>
+                </article>
+
+                <article class="grid-item card-hover-effect">
+                    <picture>
+                        <source srcset="../assets/reloj-5.webp" type="image/webp">
+                        <img src="../assets/reloj-5.png" alt="Reloj cartier, exclusivo"
+                            class="img-fluid borde-primario rounded" loading="lazy">
+                    </picture>
+                    <h3 class="mt-2">Cartier Santos</h3>
+                    <p class="precio">$8,300</p>
+                </article>
+
+                <article class="grid-item card-hover-effect">
+                    <picture>
+                        <source srcset="../assets/reloj-6.webp" type="image/webp">
+                        <img src="../assets/reloj-6.png" alt="Reloj patek philippe, exclusivo"
+                            class="img-fluid borde-primario rounded" loading="lazy">
+                    </picture>
+                    <h3 class="mt-2">Patek Philippe Nautilus</h3>
+                    <p class="precio">$12,500</p>
+                </article>
+            </div>
+
+
+
             <div class="text-center">
-                <a href="./contacto.html" class="btn btn-outline-warning my-4 fade-in-up anim-delay-2">¿Dudas? Contactanos</a>
-            </div>    
+                <a href="./contacto.html" class="btn btn-outline-warning my-4 fade-in-up anim-delay-2">¿Dudas?
+                    Contactanos</a>
+            </div>
         </main>
 
         <!-- FOOTER -->
-        <footer class="bg-dark p-4 m-3 borde-primario rounded card-hover-effect fondo-relojes-dorados">
+        <footer class="p-4 m-3 borde-primario rounded card-hover-effect fondo-relojes-dorados" role="contentinfo"
+            id="footer">
             <div class="row">
                 <div class="col-md-6">
                     <h2>Sobre nosotros</h2>

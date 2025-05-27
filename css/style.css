@@ -1,7 +1,9 @@
+@charset "UTF-8";
+/* tipografias */
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
 /* Imagen de fondo del HEADER */
 .titulo-fondo {
-  background-image: url("../assets/relojes.jpg"); /* Tu imagen de fondo */
+  background-image: url("../assets/relojes.jpg");
   background-repeat: repeat;
   padding: 20px;
   text-shadow: 8px 5px 4px #000000;
@@ -12,10 +14,12 @@
   width: 200px;
 }
 
+/* flexbox para el HEADER */
 .header-flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /*media queries*/
 }
 .header-flex .logo-contenedor {
   flex: 0 0 25%;
@@ -35,48 +39,66 @@
   }
 }
 
+/* estilos para la barra de navegacion */
 nav {
   background-color: #B8860B;
 }
 nav .nav-link {
-  color: white;
+  color: white; /* Color de texto blanco para los enlaces */
 }
 
+/* fondo con imagen centrada y sombra de texto */
+/* delay de animacion */
 body {
   background-color: #000000;
-}
-
-/* Fuentes */
-body {
   font-family: "Poppins", sans-serif;
 }
 
-h1, h2, h3, h4 {
+.titulo-modificado {
+  font-family: "Playfair Display", serif;
+  color: #dc3545;
+  font-size: 2.5rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
   font-family: "Playfair Display", serif;
 }
 
-/* Imagen de fondo para las CARDS */
+/* fondos personalizados */
 .fondo-diamantes {
-  background-image: url("../assets/diamantes-negros.png");
+  background-image: image-set(url("/assets/diamantes-negros.webp") type("image/webp"), url("/assets/diamantes-negros.png") type("image/png"));
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   text-shadow: 8px 5px 4px #000000;
 }
 
 .fondo-relojes-negros {
-  background-image: url("../assets/relojes-negros.png");
+  background-image: image-set(url("/assets/relojes-negros.webp") type("image/webp"), url("/assets/relojes-negros.png") type("image/png"));
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   text-shadow: 8px 5px 4px #000000;
 }
 
 .fondo-relojes-dorados {
-  background-image: url("../assets/relojes-dorados.png");
+  background-image: image-set(url("/assets/relojes-dorados.webp") type("image/webp"), url("/assets/relojes-dorados.png") type("image/png"));
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   text-shadow: 8px 5px 4px #000000;
   background-position: 0% 0%;
+  background-repeat: repeat;
+  background-size: auto;
 }
 
-/* Estilos globales */
-h1, h2, h3 {
+/*  colores de textos */
+h1,
+h2,
+h3 {
   color: #dc3545;
 }
 
@@ -88,7 +110,7 @@ p {
   color: #dc3545;
 }
 
-/*bordes*/
+/* Bordes y efectos */
 .borde-primario {
   border: 1px solid #dc3545;
   border-radius: 0.5rem;
@@ -101,9 +123,33 @@ p {
 }
 
 .text-shadow {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra gris suave */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* Sombra gris suave */
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 0.75rem;
+  }
+}
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    padding: 0.5rem;
+  }
+}
+/* animaciones de aparicion (fade-in) desde diferentes direcciones*/
+/*desde la izquierda*/
 @keyframes fade-in-left {
   from {
     opacity: 0;
@@ -119,6 +165,7 @@ p {
   animation: fade-in-left 1s ease-in-out forwards;
 }
 
+/*desde la derecha*/
 @keyframes fade-in-right {
   from {
     opacity: 0;
@@ -134,6 +181,7 @@ p {
   animation: fade-in-right 1s ease-in-out forwards;
 }
 
+/*desde abajo*/
 @keyframes fade-in-up {
   from {
     opacity: 0;
@@ -149,6 +197,7 @@ p {
   animation: fade-in-up 1s ease-out forwards;
 }
 
+/* desde arriba */
 @keyframes fade-in-down {
   from {
     opacity: 0;
@@ -164,7 +213,7 @@ p {
   animation: fade-in-down 1s ease-in-out forwards;
 }
 
-/*delay de animaciones*/
+/*generador de clases de delay para animaciones*/
 .anim-delay-1 {
   animation-delay: 0.3s;
 }
@@ -205,9 +254,11 @@ p {
   animation-delay: 3s;
 }
 
+/* estilos de enlaces en la barra de navegación */
 .navbar-nav .nav-item .nav-link {
   display: inline-block;
   transition: transform 0.3s ease, color 0.3s ease;
+  /* efecto hover: escala y cambio de color*/
 }
 .navbar-nav .nav-item .nav-link:hover {
   transform: scale(1.05);
@@ -216,6 +267,7 @@ p {
 
 .card-hover-effect {
   transition: transform 0.3s ease;
+  /* efecto hover: escala y movimiento hacia arriba */
 }
 .card-hover-effect:hover {
   transform: scale(1.02) translateY(-2px);
